@@ -1,0 +1,183 @@
+/* Sharanveer Singh Mehta (8746201) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:ital@1&display=swap');
+.imageDiveGridContainer {
+    display: grid;
+    grid-template-columns: 'auto';
+    margin-top: 40px;
+
+}
+
+.gridInnerImage {
+    background-image: url('../Images/innerpage/innerPage.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    min-height: 800px;
+    position: relative;
+}
+
+.overImageText {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    text-align:right;
+    right: 50px;
+    top: -8px;
+    /* width: 100%; */
+    font-size: 48px;
+    overflow: hidden;
+}
+.gridSportsAndMeContainer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+    padding: 10px;
+    margin: 50px;
+}
+.gridSportsAndMeImg {
+    margin: auto;
+    padding: 10px;
+}
+.gridSportsAndMeImg video {
+    height: 100%;
+    width: 100%;
+    margin: 30px;
+    box-shadow: 5px 5px 10px black;
+}
+.innerPageHeaders
+{
+    font-size: 40px;
+}
+h5
+{
+    font-size: 40px;
+}
+.sportsAndMeData {
+    font-size: 24px;
+    font-family: 'Roboto';
+    text-align: justify;
+    /* text-justify: inter-word; */
+    padding: 12px;
+}
+.tableHeading
+{
+    font-size: 35px;
+    text-align: center;
+}
+table
+{
+    /* border: 2px solid black; */
+    width: 100%;
+    text-align: left;
+    /* grid-gap: 20px; */
+    border-collapse: collapse;
+    
+}
+table, td, th 
+{
+    border: 1px solid black;
+    /* font-size: 20px; */
+}
+th
+{
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(2, 37, 59);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-right-color: 1px solid white;
+}
+td
+{
+    font-size: 17px;
+    padding: 10px;
+    font-family: cursive;
+}
+/* Inner Page Form */
+.innerPageFormHeading
+{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+.innerFormTitle
+{
+    font-size: 30px;
+    text-align: center;
+}
+.innerPageForm
+{
+    width: 600px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.innerinnerPageForm
+{
+    width: 600px;
+    padding: 20px;
+    /* margin: auto; */
+}
+label
+{
+    font-size: 30px;
+}
+#FieldInput
+{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+}
+#radioButtonLabel
+{
+    font-size: 30px;
+}
+.formButton1
+{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.formButton2
+{
+    margin-bottom: 20px;
+    text-align: center;
+}
+input[type='reset'] {
+    margin-top: 10px;
+    width: 40%;
+    font-size: 22px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 8px;
+    margin: auto;
+  }
+ 
+input[type='Submit'] {
+    margin-top: 10px;
+    width: 90%;
+    font-size: 22px;
+    padding: 10px;
+    height: 50px;
+    border-radius: 8px;
+    margin: auto;
+  }
+ 
+@media only screen and (max-width: 1000px) {
+    
+    .tableHeading {
+     font-size: 16px;
+    }
+    table {
+        width: 60%;
+    }
+    .tableSection table{
+        align-self: center;
+    }
+    
+  }

@@ -1,0 +1,176 @@
+/* Sharanveer Singh Mehta (8746201) */
+html {
+    background-color: #5D576B;
+    /* background-image: url(/Images/heroimage.jpg); */
+}
+
+body {
+    width: 1400px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.gridHeaderContainer {
+    display: grid;
+    grid-template-columns: 'auto auto auto auto';
+    gap: 10px;
+    background: linear-gradient(to right, rgb(34, 24, 28), rgb(56, 97, 140));
+    height: 120px;
+}
+
+.gridHeaderContainer img {
+    height: 260px;
+}
+.gridLogo {
+    margin: -70px 0px 0px 30px
+}
+
+.gridTitle {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin: 15px 0px 0px -30px;
+    color: white
+}
+.gridMenuContainer {
+    display: grid;
+    grid-template-columns: 'auto';
+    gap: 10px;
+}
+.email {
+    font-weight: 200;
+}
+nav
+{
+    text-align: center;    
+    background-color: rgb(214, 212, 160);
+    /* margin-top: 10px;   */
+    /* margin-bottom: 10px; */
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+nav ul li{
+    display: inline-block;
+    font-size: 22px;
+    /* display inline-block will keep the nav option next to each other */
+}
+nav a{
+    color: rgb(254, 254, 254);
+    text-decoration: none;
+    font-weight: bold;
+    /* add the padding to the anchor tag to have a bigger clickable area */
+    padding: 10px 50px; 
+    /* display inline-block to pass the height to the parent */
+    display: inline-block; 
+    color: black;
+}
+/* hide the sub menu  */
+ .innerNav{
+    display: none;
+    position: absolute;
+    padding:0;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    z-index: 2;
+}
+.innerNav li {
+    display: block;
+    width: 200px;
+    margin: 2px;
+    background-color: rgba(34, 24, 28,.8);
+}
+.innerNav li a {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.innerNav li:hover {
+    background-color: rgb(34, 24, 28);
+}
+
+.innerNav li:hover a {
+    font-size: 22px;
+}
+/* show the sub menu on mouse over on the parent */
+ nav ul li:hover .innerNav{
+    display: block;
+    /* if this is not used sub navs will not be visible when hovering */
+}
+
+.gridFooterContainer {
+    margin-top:40px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background: linear-gradient(to right, rgb(34, 24, 28), rgb(56, 97, 140));
+    margin-bottom: -18px;
+
+    /* grid-template-rows: auto auto auto; */
+}
+.gridCopy {
+    grid-area: 2 / 1 / span 2 / span 3;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    border-top: 2px solid white;
+}
+.gridFooterContainer > div {
+    color: white;
+}
+.gridFooterContainer h2 {
+    font-size: 26px;
+    margin: 20px;
+}
+.gridFooterContainer li {
+    margin: 16px;
+}
+.gridFooterContainer a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.gridFooterContainer a:hover{
+    color: #96C168;
+}
+.gridFooterContainer a:focus{
+    color:#aecfdf;
+}
+.gridFooterContainer a:active{
+    color: #F3B97C;
+}
+h2 {
+    font-family: cursive;
+}
+.textSectionCard li
+{
+    font-size: 20px;
+}
+.textSectionCard h3
+{
+    font-size: 22px;
+    text-align: center;
+}
+.backToTop
+{
+    margin-top: 10px;
+}
+.backToTop a{
+    font-size: 25px;
+}
+h2
+{
+    font-size: 35px;
+}
+p
+{
+    color: black;
+}
+
+

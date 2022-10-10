@@ -1,0 +1,280 @@
+/* Sharanveer Singh Mehta (8746201) */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Open+Sans:ital@1&display=swap');
+.gridHeroImageContainer {
+    display: grid;
+    grid-template-columns: 'auto';
+    gap: 10px;
+}
+
+.gridHero {
+    /* The image used */
+    background-image: url("../Images/heroimage.jpg");
+    /* background-image: url("../Images/hero/hero.jpg"); */
+
+    /* Set a specific height */
+    min-height: 500px;
+    /* margin-top:20px; */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gridAboutMeContainer {
+    display: grid;
+    grid-template-columns: auto;
+    /* grid-template-rows: auto auto; */
+    gap: 10px;
+    padding: 10px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.gridAboutMe {
+    margin: auto;
+    padding: 10px;
+    box-shadow: 5px 5px 20px 0px #a882dd;
+}
+
+.gridAboutMe h2 {
+    text-align: center;
+}
+
+.aboutMeData {
+    font-size: 24px;
+    font-family: 'Roboto';
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 12px;
+}
+
+.gridAboutAchievements {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.gridAboutAchievementsImg {
+    margin: auto;
+    padding: 10px;
+}
+
+.gridAboutAchievements img {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    /* clip-path: circle(50%); */
+    box-shadow: 5px 5px 10px #7D1538;
+    animation: polygons 10s alternate;
+}
+
+@keyframes polygons {
+    25% {
+        clip-path: polygon(100% 50%, 50% 100%, 0% 50%, 50% 0%, );
+    }
+
+    50% {
+        clip-path: polygon(50% 100%, 0% 50%, 50% 0%, 100% 50%);
+    }
+
+    75% {
+        clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+    }
+}
+
+.gridAchievements {
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 50px 10px #f3bc8eba inset;
+    border: none;
+}
+
+.gridAchievements h2 {
+    text-align: center;
+}
+
+.gridAboutStruggles {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.gridAboutStrugglesImg {
+    margin: auto;
+    padding: 10px;
+}
+
+.gridAboutStrugglesImg img {
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 100%, 50% 0%, 100% 50%);
+    /* clip-path: circle(50%); */
+    box-shadow: 5px 5px 10px #7D1538;
+    animation: polygonStruggle 5s alternate;
+}
+
+@keyframes polygonStruggle {
+    25% {
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%);
+    }
+
+    50% {
+        clip-path: polygon(100% 50%, 50% 100%, 50% 0%);
+    }
+
+    75% {
+        clip-path: polygon(50% 100%, 50% 0%, 100% 50%);
+    }
+}
+
+.gridStruggles {
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 50px 10px #f3bc8eba inset;
+
+}
+
+.gridStruggles h2 {
+    text-align: center;
+}
+
+.educationHeader {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+}
+
+.educationGridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 600px 600px 600px; */
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.educationGridContainer div {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.gridKindergarten {
+    background: url('../Images/Education/card1.jpg');
+    position: relative;
+}
+.gridHighSchool {
+    background: url('../Images/Education/card2.jpg');
+    position: relative;
+}
+.gridUniversity {
+    background: url('../Images/Education/card3.jpg');
+    position: relative;
+}
+.gridKindergarten:hover {
+    animation: wiggle .7s alternate-reverse;
+}
+
+.gridHighSchool:hover {
+    animation: wiggle .7s alternate-reverse;
+}
+
+.gridUniversity:hover {
+    animation: wiggle .7s alternate-reverse;
+}
+.textSectionCard {
+    position: absolute;
+    width: 100%;
+    height: 200px !important;
+    border-top-left-radius:  0 !important;
+    border-top-right-radius: 0 !important ;
+    background: black; 
+    bottom: 0%;
+    background-color: rgba(0,0,0,0.5);
+    /* padding: 20px; */
+    
+}
+.clickableDiv {
+    position: absolute;
+    width: 100%;
+    height: 400px !important;
+    border-bottom-left-radius:  0 !important;
+    border-bottom-right-radius: 0 !important ;
+    background: black; 
+    top: 0%;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+.textSectionCard section {
+    color: white;
+    margin: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.textSectionCard:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.readMoreBtn button{
+    /* margin: 10px;
+    margin-top: 0;
+    margin-left: 0px; */
+    padding: 4px;
+    background-color: #018e42;
+    color: white;
+    font-size:17px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@keyframes wiggle {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
